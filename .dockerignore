@@ -1,0 +1,9 @@
+**/*.pyc
+**/__pycache__/
+.git/
+.idea
+.tox
+.venv/
+.env
+config.yaml
+docker-compose.yaml

@@ -1,0 +1,37 @@
+[tool.black]
+line-length = 88
+target_version = ['py37', 'py38', 'py39', 'py310', "py311"]
+exclude = '''
+(
+  /(
+    | \.git
+    | \.venv
+    | \.mypy_cache
+    | \.tox
+  )/
+)
+'''
+
+[tool.isort]
+line_length = 88
+profile = "black"
+
+[tool.poetry]
+name = "todo-list-python"
+version = "1.0.0"
+description = "A simple ToDo list with GET and POST."
+authors = ["Meni Yakove"]
+readme = "README.md"
+repository = "https://github.com/myakove/todo-list-python"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+flask = "*"
+
+[tool.poetry.dev-dependencies]
+ipython = "*"
+ipdb = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
